@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ........................................CSS................................................ -->
+    <link rel="stylesheet" href="CSS/Login.css">
+
+    <title>Login</title>
+</head>
+<body>
+        <div class="LoginBody">
+            <h1>LOGIN</h1>
+            <form action="#">
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password"><br>
+                <button onclick="myFunction()">Sign In</button>
+                <button onclick="sendTransaction()">Send Transaction</button>
+            </form>
+            <p>Not a user? <a href="Register.html">Register</a></p>
+        </div>
+
+        <script>
+            function myFunction() {
+              alert("Dangerous");
+            }
+
+            async function sendTransaction(){
+                window.ethereum.request({method: "eth_sendTranction", param})
+            }
+        </script>
+
+</body>
+</html>
